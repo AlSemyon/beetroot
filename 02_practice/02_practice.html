@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mailto</title>
+</head>
+<body>
+    <form action="mailto:s.aliabyshev@gmail.com">
+        <label for="SubjectId">Subject</label>
+        <input type="text" name="subject" required placeholder="Write subject" id="SubjectID">
+
+        <textarea name="body"></textarea>
+
+        <button type="submit">Отправить</button>
+    </form>
+
+    <form action="#">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Write name" id="name">
+        </div>
+
+        <div>
+            <label for="surName">Sur name</label>
+            <input type="text" name="sur_name" placeholder="Write sur name" id="surName" disabled>
+        </div>
+
+        <div>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female" id="female">
+
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male" id="male">
+        </div>
+
+        <div>
+            <input type="checkbox" name="rules" id="rules" value="checked_rules" checked="checked">
+            <label for="rules">Do you agree with rules <a href="#">rules link</a></label>
+
+        </div>
+
+        <div>
+            <label for="numbers">Select number</label>
+            <select name="numbers" id="numbers">
+                <option value="1" hidden></option>
+                <option value="2">Test 2</option>
+                <option value="3" disabled>Test 3</option>
+
+            </select>
+        </div>
+        <button type="button" disabled>Отправить</button>
+
+        <button type="submit">Отправить</button>
+    </form>
+
+
+    <a href="mailto:s.aliabyshev@gmail.com?subject=Тема&body= Тело письма">Написать email</a>
+</body>
+</html>
