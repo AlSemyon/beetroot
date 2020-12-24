@@ -1,0 +1,47 @@
+/* * {
+    background: #040404;
+} */
+
+h1 {
+    color: #FFFFFF;
+}
+
+.red {
+    color: #FD3301;
+}
+
+.orange {
+    color: #CC6566;
+}
+
+.yellow {
+    color: #FFFE01;
+}
+
+.green {
+    color: #039800;
+}
+
+.light-blue {
+    color: #00CCFF;
+}
+
+.blue {
+    color: #3300CD;
+}
+
+.violet {
+    color: #3300CB;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
