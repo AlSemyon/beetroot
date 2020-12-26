@@ -1,0 +1,93 @@
+.strong {
+	font-weight: 700;
+	display: block;
+	font-size: 40%;
+}
+
+.del {
+	text-decoration: line-through;
+}
+
+.ins {
+	text-decoration: underline;
+}
+
+.block,
+.header { 
+	margin: 0 auto;
+	width: 700px;
+}
+
+.mainblock {
+	background: white;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.header a {
+	text-decoration: none;
+	color: black;
+}
+
+html,
+body {
+	background: #F5F4EF;
+}
+
+h2 {
+	color: red;	
+}
+
+.blogroll ul {
+	padding: 0;
+}
+
+.blogroll ul > li {
+	list-style: none;
+	width: 240px;
+	border-bottom: 2px inset grey;
+
+}
+
+.blogroll a {
+	text-decoration: none;
+	width: 100%;
+	display: block;
+}
+
+a {
+	color: red;
+}
+
+a:hover {
+	color: white;
+	background: red;
+}
+
+header a:hover {
+	background: none;
+	color: red;
+}
+
+h3 a {
+	color: black;
+	text-decoration: none;
+}
+
+h2 a {
+	text-decoration: none;
+}
+
+#content article:not(:last-child) {
+	position: relative;
+}
+#content article:not(:last-child)::after{
+	content: '';
+	position: absolute;
+	height: 2px;
+	bottom: -5px;
+	left: 10%;
+	right: 10%;
+	background-color: #000;
+
+}
