@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    height: 300px;
+}
+
+.flex-row-images {
+    display: flex;
+    width: 25%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-row-images img {
+    width: 140px;
+    height: 140px;
+}
+
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row-fields {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.flex-row-fields input{
+    flex-basis: 49%;
+    height: 45%;
+}
+
+.form-group-fields {
+    flex-grow: 2;
+}
+
+.form-group-message {
+    flex-grow: 3;
+}
+
+.submit {
+   background: url('../images/msgicon.png') no-repeat center,  chartreuse;
+   flex-grow: 1;
+   border-radius: 0 10px 10px 0;
+}
+
+.flex-row-message {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    margin: 10px 4px;
+}
+
+.header-span {
+    color: chartreuse;
+}
+
+.header {
+    font-weight: normal;
+}
+
+.header-info {
+    color: grey;
+    font-size: 18px;
+}
+
+.input-form {
+    border-radius: 10px;
+    outline: none;
+    padding-left: 20px;
+}
+
+.input-form:focus {
+    color: grey;
+    border-color: chartreuse;
+}
+
+.input-form::placeholder {
+    font-style: italic;
+}
+
+.message {
+    flex-grow: 9;
+    padding-top: 20px;
+    border-radius: 10px 0 0 10px;
+}
