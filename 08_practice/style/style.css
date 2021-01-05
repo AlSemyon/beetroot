@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Bazar';
+    src: url('../fonts/Bazar 500.ttf');
+}
+
+body {
+    background-color: #e68966;
+}
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-row {
+    display: flex;
+}
+
+.main-header {
+    font-family: 'Bazar', serif;
+    text-transform: uppercase;
+    font-size: 180px;
+    text-shadow: 5px 5px 10px rgba(0, 0 , 0, .7);
+}
+
+.delimeter {
+    font-size: 44px;
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+}
+
+.delimeter::after,
+.delimeter::before {
+    content: '';
+    width: 80px;
+    border-bottom: solid 1px #000;
+    position: absolute;
+    top: 50%;
+}
+
+.delimeter::before {
+    left: -80px;
+}
+
+.delimeter::after {
+    right: -80px;
+}
+
+.header-info {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.filters-panel {
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+}
+
+.filters {
+    list-style-position: inside;
+}
+
+.filters li {
+    background-color: #FFF;
+    margin-left: 20px;
+    position: relative;
+    padding-right: 20px;
+    text-transform: lowercase;
+    border-radius: 0 10px 10px 0;
+}
+
+.filters li:before {
+    left: -30px;
+    top: 0px;
+    content: '';
+    width: 16px;
+    position: absolute;
+    border-style: solid;
+    border-width: 16px 14px 16px 0;
+    border-color: transparent #FFF transparent transparent;
+}
+
+.filters li::marker {
+    color: grey;
+}
+
+.image-mock {
+    height: 320px;
+    width: 430px;
+    background-color: gray;
+}
+
+.container-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+    list-style: none;
+    margin-top: 42px;
+}
+
+.container-images li{
+    margin-right: 20px;
+    padding: 5px;
+    background-color: white;
+    margin-bottom: 42px;
+}
+
+.container-images li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.container-images li i {
+    font-size: 40px;
+    border-radius: 50%;
+    margin-top: -30px;
+    background: white;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.container-images li span {
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+}
+
+.browse-all {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    position: relative;
+}
+
+.browse-all::before {
+    content: '';
+    position: absolute;
+    left: 20%;
+    top: 0;
+    height: 1px;
+    width: 60%;
+    border-bottom: 2px solid;
+}
