@@ -1,0 +1,14 @@
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px 0;
+    
+}
+
+.card__logo {
+    margin-right: 170px;
+}
+
+.card__navigator {
+    flex-grow: 1;
+}

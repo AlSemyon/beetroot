@@ -1,0 +1,34 @@
+.navigator {
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    min-width: 550px;
+}
+
+.navigator__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin: 0 170px 0 0;
+    padding: 0;
+}
+
+.navigator__list-elem {
+    cursor: pointer;
+}
+
+.navigator__list-elem:hover {
+    border-bottom: 2px solid white;
+}
+
+.navigator__list-elem_active {
+    border-bottom: 2px solid white;
+}
+
+.navigator__button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+}
