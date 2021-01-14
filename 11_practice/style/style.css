@@ -1,0 +1,48 @@
+.form {
+    background-color: #166565;
+    box-shadow: 0 20px 10px rgba(0,0, 0, 0.5);
+    height: 500px;
+    width: 400px;
+}
+
+.body__form {
+    margin: 0 auto;
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+}
+
+.tabs__link {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.tabs__link--active {
+    border-bottom: 2px red solid;
+    color: rgba(255, 255, 255);
+}
+
+.sign_in {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs input:focus {
+    border-color: red;
+    outline: none;
+}
+
+.inputs input:invalid + .inputs__error {
+    display: block;
+}
+
+.inputs__error {
+    display: none;
+}

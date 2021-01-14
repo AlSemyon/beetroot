@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body class="body">
+    <div class="form body__form">
+        <ul class="form__tabs tabs">
+            <li>
+                <a href="#" class="tabs__link tabs__link--active">Sign in</a>
+            </li>
+            <li>
+                <a href="#" class="tabs__link">Join us</a>  
+            </li>
+        </ul>
+
+        <form class="form__sign_in sign_in" action="#" method="GET">
+            <div class="sign_in__inputs inputs">
+                <label for="usernameID">Username</label>
+                <!-- RegExp -->
+                <input type="text" id="usernameID" name="usernameName" pattern="^[A-Za-z]{6}[A-Za-z]+$" required>
+                <span class="inputs__error">Error</span>
+            </div>
+
+            <div class="sign_in__inputs inputs">
+                <label for="password">password</label>
+                <input type="password" id="password" name="password" required>
+                <span class="inputs__error">Error</span>
+            </div>
+
+            <div class="sign_in__inputs inputs">
+                <input type="checkbox" id="checkbox" name="checkbox" checked>
+                <label for="checkbox">checkbox</label>
+                <span class="inputs__error">Error</span>
+            </div>
+
+            <!-- CSRF -->
+            <input type="hidden" name="csrf_tokken" value="EJLKADSFHWlkasdjlkj=">
+
+            <button type="submit">Sign in</button>
+        </form>
+
+        <ul>
+            <li>
+                <a href="#">Forgot password</a>
+            </li>
+            <li>
+                <a href="#">Create account</a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        var xhr = new XMLHttpRequest();
+
+        xhr.open('GET', 'test.html', false)
+
+        xhr.send()
+    </script>
+</body>
+</html>
