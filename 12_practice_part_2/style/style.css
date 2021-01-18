@@ -1,0 +1,35 @@
+.container {
+    width: 68px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon {
+    width: 32px; 
+    height: 32px;
+}
+
+/** sprites */
+.icon__bg-delicious {
+    background: url('../sprites/css_sprites.png') -10px -10px;
+}
+
+.icon__bg-edge {
+    background: url('../sprites/css_sprites.png') -62px -10px;
+}
+
+.icon__bg-file_excel {
+    background: url('../sprites/css_sprites.png') -10px -62px;
+}
+
+.icon__bg-file_openoffice {
+    background: url('../sprites/css_sprites.png') -62px -62px;
+}
+
+.icon__bg-file_pdf {
+    background: url('../sprites/css_sprites.png') -114px -10px;
+}
+
+.test {
+    fill: blueviolet;
+}

@@ -4,37 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
 </head>
-<body>
-    <div class="modal">
-        <div class="modal__header">
-            <div>
-                <h2>Harold Finch</h2>
-                <div>Your total</div>
+<body class="page">
+    <div class="modal page__modal">
+        <div class="modal__header header">
+            <div class="header__info">
+                <h2 class="header__fio">Harold Finch</h2>
+                <div class="header__total">Your total</div>
             </div>
 
-            <div>
+            <div class="header__price">
                 88
             </div>
         </div>
 
-        <form action="#" method="get">
-            <div>
+        <form action="#" method="get" class="form">
+            <div class="input-group">
                 <label for="cc_number">Credit card number</label>
                 <input type="text" id="cc_number" name="cc_number">
             </div>
 
-            <div>
-                <div>
+            <div class="input-group">
+                <label>
+                    Expiration date
+                </label>
+                <div class="form__date date">
                     <select name="month" id="month">
                         <option value="" selected disabled hidden>Select month</option>
                         <option value="01">JAN</option>
                         <option value="02">FEB</option>
                     </select>
-                </div>
-    
-                <div>
                     <select name="year" id="year">
                         <option value="" selected disabled hidden>Select year</option>
                         <option value="1990">1990</option>
@@ -43,10 +46,15 @@
                 </div>
             </div>
 
-            <div>
-                <label for=""></label>
-                <input type="text" minlength="3" maxlength="4">
-                <div>3 or 4 digits - <a href="#">view example</a></div>
+            <div class="input-group">
+                <label for="cvv">CVV</label>
+                <div class="form__cvv cvv">
+                    <input type="text" minlength="3" maxlength="4" id="cvv">
+                    <div class="cvv__help">
+                        3 or 4 digits - 
+                        <a href="#">view example</a>
+                    </div>
+                </div>
             </div>
 
 

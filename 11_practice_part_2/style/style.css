@@ -1,3 +1,131 @@
-input {
-    caret-color: red;
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    background: no-repeat 135% 35% url(../image/unsplash.png) #4d5254;
+    background-size: 52%;
+}
+
+.page__modal {
+    margin: 0 auto;
+    width: 336px;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.modal__header {
+    padding: 24px;
+    background-color: #efe4aa;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__fio {
+    color: #6e7f7b;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.header__total {
+    color: #a6a28d;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+}
+
+.header__price {
+    color: #637570;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: -1.8px;
+    display: flex;
+}
+
+.header__price::before {
+    content: '$';
+}
+
+.form {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.form label {
+    color: #9eabad;
+    font-size: 13px;
+}
+
+.form select,
+.form input {
+    border: 2px solid #bac8cb;
+    height: 44px;
+    color: #727f82;
+    font-size: 13px;
+    padding: 0 0 0 9px;
+    caret-color: #f7d36a;
+}
+
+.form select:focus,
+.form input:focus {
+    outline: 2px solid #82d4e7;;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 9px;
+}
+
+.date {
+    display: flex;
+}
+
+.date select {
+    appearance: none;
+    background: no-repeat calc(100% - 9px) 50% url('../image/Shape_5.png');
+}
+
+.date select:first-child {
+    flex-grow: 2;
+    margin-right: 16px;
+}
+
+.date select:nth-child(2) {
+    flex-grow: 1;
+}
+
+.cvv {
+    display: flex;
+}
+
+.cvv__help {
+    color: #9eabad;
+    font-size: 12px;
+    flex-grow: 1;
+}
+
+.cvv__help a {
+    text-decoration: none;
+    border-bottom: 1px solid #e4eaea;
+    color: #9eabad;
 }
